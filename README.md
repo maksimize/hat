@@ -9,6 +9,7 @@ hat is a tool that helps web makers (designers/developer) to speed up with work 
 
 for example ``$ hat jquery`` downloads the latest minefield jquery to the current directory
 
+
 ### The current available repositories
 
 * ``$ hat jquery`` for jquery
@@ -19,7 +20,19 @@ for example ``$ hat jquery`` downloads the latest minefield jquery to the curren
 
 * ``$ hat laravel`` for laravel php framework
 
-### Need your help
+### Installation
+
+1st you have to have node.js installed on your commandline
+
+then download the folder anywhere in your pc
+
+use it as ``$ node path/to/hat/hat.js jquery``
+
+or if you on linux machine edit ``~/.bashrc`` file and append this line ``alias hat="node path/to/hat/hat.js"``
+
+and us it as ``$ hat jquery``
+
+### Need your support
 this project needs to get bigger
 
 i will add more libraries and frameworks later on
