@@ -29,6 +29,10 @@ switch (arguments[0]){
 	cake(arguments[1]);
     break;
 
+	case 'min':
+	min(arguments[1], arguments[2]);
+    break;
+
     default:
     console.log(logSuffix + ' ' + arguments[0] + ' Not found');
     console.log(logSuffix);
@@ -64,6 +68,23 @@ function cake(output){
 	zip('cakephp-master', output, url);
 }
 
+function min(input, output){
+	if(!output){
+		inputArray = input.split('.') ;
+		var extention = inputArray.pop();
+		inputArray.push('min');
+		inputArray.push(extention);
+		output = inputArray.join('.');
+	}
+
+	exec('java -jar tools/yuicompressor.jar -o ' + output + ' ' + input , function(){
+		console.log(logSuffix + output + ' created');
+		console.log(logSuffix);
+		console.log(logSuffix + 'Done');
+		console.log(logSuffix);
+		console.log(logSeparator);
+	});
+}
 
 
 /*
@@ -105,5 +126,5 @@ function file(output, url){
 
 function randomName(callback){
 	var date = new Date();
-	return date.toISOString();	
+	return 'hatTool' + date.toISOString();	
 }

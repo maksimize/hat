@@ -9,6 +9,12 @@ hat is a tool that helps web makers (designers/developer) to speed up with work 
 
 for example ``$ hat jquery`` downloads the latest minefield jquery to the current directory
 
+### Js and Css minifier
+``$ hat min style.css``
+
+create a file with name ``style.min.css`` in the dir you are in with minfied css of ``style.css``
+
+it uses yahoo YUI Compressor to compress css and js files
 
 ### The current available repositories
 
